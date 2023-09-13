@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Astro View Transitions API in 4321">
+	<main class="grid grid-cols-1 md:grid-cols-4 text-center w-full min-h-screen">
+		<div class="w-full flex justify-center items-center bg-amber-600" transition:name="container-4">
+			<a href="/4/" class="text-white text-9xl font-mono block p-8" transition:name="num-4">4</a>
+		</div>
+		<div class="w-full flex justify-center items-center bg-slate-600" transition:name="container-3">
+			<a href="/3/" class="text-white text-9xl font-mono block p-8" transition:name="num-3">3</a>
+		</div>
+		<div class=" w-full flex justify-center items-center bg-cyan-600" transition:name="container-2">
+			<a href="/2/" class="text-white text-9xl font-mono block p-8" transition:name="num-2">2</a>
+		</div>
+		<div class="w-full flex justify-center items-center bg-stone-600" transition:name="container-1">
+			<a href="/1/" class="text-white text-9xl font-mono block p-8" transition:name="num-1">1</a>
+		</div>
+	</main>
+</Layout>
